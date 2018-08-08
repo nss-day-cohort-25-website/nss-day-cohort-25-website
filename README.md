@@ -21,3 +21,13 @@ an example student object...
 	}
 ]
 ```
+
+NOTE: Once you clone down repo you will need to run
+
+	npm install
+
+To get the dependencies. THen you should be able to run
+
+	npm start
+
+and you're on your way!
