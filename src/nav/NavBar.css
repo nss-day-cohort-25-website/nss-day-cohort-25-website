@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100vw;
+}
+
+nav img {
+    width: 25%;
+    height: 10%;
+}
+
+nav input{
+    width: 50%;
+    height: 50%;
+}
