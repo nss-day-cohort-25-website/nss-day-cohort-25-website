@@ -31,7 +31,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <nav>
-                <img src={nss}/> 
+                <img src={nss} alt="nssLogo"/> 
                 <h1> Cohort 25 </h1>
                 <input id="searchTerms"
                     // value={this.state.searchTerms}
