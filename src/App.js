@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './nav/NavBar';
+import StudentBlock from './student-cards/StudentBlock';
 
 class App extends Component {
 
@@ -40,6 +41,9 @@ class App extends Component {
     return (
       <div>
         <NavBar/>
+        <StudentBlock 
+          students={this.state.students}
+        />
       </div>
     );
   }
