@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './nav/NavBar';
 import StudentBlock from './student-cards/StudentBlock';
+import GroupTech from './groupTech/groupTech'
 
 class App extends Component {
 
@@ -44,6 +44,7 @@ class App extends Component {
         <StudentBlock 
           students={this.state.students}
         />
+        <GroupTech/>
       </div>
     );
   }

@@ -1,0 +1,18 @@
+.groupImage {
+    width: 100vw;
+}
+
+.lang__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 5% 13% 5% 13%;
+    margin: 6%;
+    background: rgba(200,200,200, 0.8)
+}
+.lang__container img{
+    height: 10%;
+    width: 10%;
+    padding: 1%;
+}
