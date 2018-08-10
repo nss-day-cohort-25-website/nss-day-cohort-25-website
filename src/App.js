@@ -89,10 +89,10 @@ class App extends Component {
     return (
       <div>
         <NavBar/>
+        <GroupTech/>
         <StudentBlock 
           students={this.state.students}
         />
-        <GroupTech/>
       </div>
     );
   }
