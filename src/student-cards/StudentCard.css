@@ -1,0 +1,22 @@
+.container__student{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card__student {
+    width: 25%;
+    height: 25%;
+    margin: 1%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px lightblue solid;
+}
+
+.card__student img {
+    height: 25%;
+    width: 25%;
+}
