@@ -42,4 +42,4 @@ class StudentProfile extends Component {
     }
 }
 
-export default StudentCard
+export default StudentProfile
