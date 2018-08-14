@@ -8,7 +8,7 @@ export default class NavBar extends Component {
 
     // Set initial state
     state = {
-        searchTerms: ""
+        searchTerms: ''
     }
 
     /**
@@ -42,6 +42,7 @@ export default class NavBar extends Component {
                     placeholder="Search for Student by Name"
                     // aria-label="Search" 
                     />
+                <button>Party Mode</button>    
             </nav>
         )
     }
