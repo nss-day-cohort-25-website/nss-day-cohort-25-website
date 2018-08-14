@@ -52,6 +52,7 @@ import vickersFun from './img/finalsindividuals1/vickersFun.jpg'
 import vickersSerious from './img/finalsindividuals1/vickersSerious.jpg'
 import youngFun from './img/finalsindividuals1/youngFun.jpg'
 import youngSerious from './img/finalsindividuals1/youngSerious.jpg'
+import StudentModal from './student-modal/StudentModal';
 class App extends Component {
 
   // initial state of application, holds student information
@@ -111,7 +112,7 @@ class App extends Component {
           students={this.state.students}
           showModal={this.showModal}
         />
-        {/* <StudentModal /> */}
+        <StudentModal />
       </div>
     );
   }
