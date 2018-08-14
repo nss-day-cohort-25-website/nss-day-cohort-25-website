@@ -12,6 +12,7 @@ class StudentBlock extends Component {
                 {this.props.students.map(student => (
                     <StudentCard 
                         student={student}
+                        showModal={this.props.showModal}
                     />
                 ))}
                 </div>

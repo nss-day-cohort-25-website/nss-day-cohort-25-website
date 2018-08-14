@@ -56,6 +56,8 @@ class App extends Component {
 
   // initial state of application, holds student information
   state = {
+    modalShown: false,
+    modalStudent: null,
     students: [
       {first_name: 'Cashew', last_name: 'Agnoletti', serious_photo: cashewSerious, fun_photo: cashewFun, github: 'https://github.com/CashewRose', linkedin: 'https://www.linkedin.com/in/cashew-agnoletti', email: 'danieagnoletti@gmail.com', personal_website: 'URL TK', other_website: '', other_website_description: '', preferred_skill: 'React and JavaScript', bio: 'As an avid gamer who is familiar with a computer I fell in love with programming.'},
       {first_name: 'Erin', last_name: 'Agobert', serious_photo: agobertSerious, fun_photo: agobertFun, github: 'https://github.com/eagobert', linkedin: 'https://www.linkedin.com/in/eagobert/', email: 'eagobert@hotmail.com', personal_website: 'www.erinagobert.com', other_website: '', other_website_description: '', preferred_skill: "I'm very interested in exploring how different technologies and programming languages are used for data exploration. I would like to expand on my training in Python and C#, delving into the various packages for data management and analysis", bio: "Air Force veteran and former federal administrator turned budding full-stack software developer. I have a passion for designing and developing information retrieval systems and data visualizations"},
@@ -85,6 +87,21 @@ class App extends Component {
     ]
   }
 
+  showModal = (studentId) => {
+    // function to show the student modal and pass it a student id to show
+    this.setState({
+      modalShown: true,
+      modalStudent: studentId,
+    })
+  }
+
+  hideModal = () => {
+    this.setState({
+      modalShown: false,
+      modalStudent: null,
+    })
+  }
+
   render() {
     return (
       <div>
@@ -92,7 +109,9 @@ class App extends Component {
         <GroupTech/>
         <StudentBlock 
           students={this.state.students}
+          showModal={this.showModal}
         />
+        {/* <StudentModal /> */}
       </div>
     );
   }
