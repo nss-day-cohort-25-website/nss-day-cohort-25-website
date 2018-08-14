@@ -52,10 +52,14 @@ import vickersFun from './img/finalsindividuals1/vickersFun.jpg'
 import vickersSerious from './img/finalsindividuals1/vickersSerious.jpg'
 import youngFun from './img/finalsindividuals1/youngFun.jpg'
 import youngSerious from './img/finalsindividuals1/youngSerious.jpg'
+
+
 class App extends Component {
 
   // initial state of application, holds student information
   state = {
+    modalShown: false,
+    modalStudent: null,
     students: [
       { id: 1, first_name: 'Cashew', last_name: 'Agnoletti', serious_photo: cashewSerious, fun_photo: cashewFun, github: 'https://github.com/CashewRose', linkedin: 'https://www.linkedin.com/in/cashew-agnoletti', email: 'danieagnoletti@gmail.com', personal_website: 'URL TK', other_website: '', other_website_description: '', preferred_skill: 'React and JavaScript', bio: 'As an avid gamer who is familiar with a computer I fell in love with programming.' },
       { id: 2, first_name: 'Erin', last_name: 'Agobert', serious_photo: agobertSerious, fun_photo: agobertFun, github: 'https://github.com/eagobert', linkedin: 'https://www.linkedin.com/in/eagobert/', email: 'eagobert@hotmail.com', personal_website: 'www.erinagobert.com', other_website: '', other_website_description: '', preferred_skill: "I'm very interested in exploring how different technologies and programming languages are used for data exploration. I would like to expand on my training in Python and C#, delving into the various packages for data management and analysis", bio: "Air Force veteran and former federal administrator turned budding full-stack software developer. I have a passion for designing and developing information retrieval systems and data visualizations" },
@@ -87,7 +91,28 @@ class App extends Component {
     currentView: 'home'
   }
 
+  showModal = (studentId) => {
+    // function to show the student modal and pass it a student id to show
+    this.setState({
+      modalShown: true,
+      modalStudent: studentId,
+    })
+  }
+
+  hideModal = (evt) => {
+    // method to close modal
+    // only runs set state if the target
+    // of the event has the class 'close'
+    if (evt.target.classList.contains("close")) {
+      this.setState({
+        modalShown: false,
+        modalStudent: null,
+      })
+    }
+  }
+
   searchingView = () => (<h1 style={{ marginTop: '125px' }}>Searching ... </h1>)
+
   // Search handler -> passed to NavBar
   findStudent = function (terms) {
     this.setState({
@@ -116,14 +141,20 @@ class App extends Component {
 
   View = () => {
     switch (this.state.currentView) {
-      case "home":
-        return <MainView students={this.state.students} showView={this.state.showView}/>
       case "profile":
         return <StudentProfile />
       case "searching":
         return <this.searchingView />
+      case "home":
       default:
-        return <MainView students={this.state.students} />
+        return <MainView
+          students={this.state.students}
+          showView={this.state.showView}
+          showModal={this.showModal}
+          hideModal={this.hideModal}
+          modalShown={this.state.modalShown}
+          modalStudent={this.state.modalStudent}
+        />
     }
   }
 
@@ -136,6 +167,7 @@ class App extends Component {
       </div>
     )
   }
+
 }
 
 export default App;
