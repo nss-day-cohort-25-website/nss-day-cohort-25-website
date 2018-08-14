@@ -52,7 +52,6 @@ import vickersFun from './img/finalsindividuals1/vickersFun.jpg'
 import vickersSerious from './img/finalsindividuals1/vickersSerious.jpg'
 import youngFun from './img/finalsindividuals1/youngFun.jpg'
 import youngSerious from './img/finalsindividuals1/youngSerious.jpg'
-import StudentModal from './student-modal/StudentModal';
 
 
 class App extends Component {
@@ -100,11 +99,16 @@ class App extends Component {
     })
   }
 
-  hideModal = () => {
-    this.setState({
-      modalShown: false,
-      modalStudent: null,
-    })
+  hideModal = (evt) => {
+    // method to close modal
+    // only runs set state if the target
+    // of the event has the class 'close'
+    if (evt.target.classList.contains("close")) {
+      this.setState({
+        modalShown: false,
+        modalStudent: null,
+      })
+    }
   }
 
   searchingView = () => (<h1 style={{ marginTop: '125px' }}>Searching ... </h1>)
@@ -137,19 +141,17 @@ class App extends Component {
 
   View = () => {
     switch (this.state.currentView) {
-      case "home":
-        return <MainView
-          students={this.state.students}
-          showView={this.state.showView}
-          showModal={this.showModal}
-        />
       case "profile":
         return <StudentProfile />
       case "searching":
         return <this.searchingView />
+      case "home":
       default:
         return <MainView
           students={this.state.students}
+          showView={this.state.showView}
+          showModal={this.showModal}
+          hideModal={this.hideModal}
           modalShown={this.state.modalShown}
           modalStudent={this.state.modalStudent}
         />
