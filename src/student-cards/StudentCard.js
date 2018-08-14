@@ -20,7 +20,7 @@ class StudentCard extends Component {
     render() {
         return (
             <React.Fragment>
-                <div class="card__student">
+                <div className="card__student">
                     <p>{this.props.student.first_name} {this.props.student.last_name}</p>
                     {this.state.cardFlipped ?
                         <React.Fragment>

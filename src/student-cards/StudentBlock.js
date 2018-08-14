@@ -8,9 +8,9 @@ class StudentBlock extends Component {
     render() {
         return (
             <React.Fragment>
-                <div class="container__student">
+                <div className="container__student">
                 {this.props.students.map(student => (
-                    <StudentCard 
+                    <StudentCard key={student.id}
                         student={student}
                         showModal={this.props.showModal}
                     />
