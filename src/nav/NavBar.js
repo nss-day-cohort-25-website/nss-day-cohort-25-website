@@ -17,7 +17,7 @@ export default class NavBar extends Component {
      */
     search = (e) => {
         if (e.charCode === 13) {
-            this.props.searchHandler(this.state.searchTerms)
+            this.props.searchHandler(this.state.searchTerms.toLowerCase())
             this.setState({ searchTerms: "" })
         }
     }
@@ -34,13 +34,13 @@ export default class NavBar extends Component {
                 <img src={nss} alt="nssLogo"/> 
                 <h1> Cohort 25 </h1>
                 <input id="searchTerms"
-                    // value={this.state.searchTerms}
-                    // onChange={this.handleFieldChange}
-                    // onKeyPress={this.search}
+                    value={this.state.searchTerms}
+                    onChange={this.handleFieldChange}
+                    onKeyPress={this.search}
                     // className="form-control w-100"
                     // type="search"
                     placeholder="Search for Student by Name"
-                    // aria-label="Search" 
+                    aria-label="Search" 
                     />
                 <button>Party Mode</button>    
             </nav>
