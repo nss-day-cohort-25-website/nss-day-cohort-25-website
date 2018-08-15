@@ -186,7 +186,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar searchHandler={this.findStudent} fieldHandler={this.handleFieldChange}/>
+        <NavBar viewHandler={this.showView} 
+        searchHandler={this.findStudent} 
+        fieldHandler={this.handleFieldChange}/>
         {this.View()}
       </div>
     )
