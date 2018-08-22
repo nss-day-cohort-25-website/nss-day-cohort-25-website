@@ -13,10 +13,22 @@
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px lightblue solid;
+    border-top: 2px lightblue solid;
 }
 
-.card__student img {
+.student__img {
     height: 25%;
     width: 25%;
+}
+
+.student__links {
+    width: 30px;
+    height: auto;
+    margin: 3px;
+}
+
+.student__info {
+    width: 35px;
+    height: auto;
+    margin: 3px;
 }
