@@ -42,7 +42,7 @@ export default class NavBar extends Component {
                     placeholder="Search for Student by Name"
                     // aria-label="Search" 
                     />
-                <button>Party Mode</button>    
+                <button onClick={this.props.partyToggle}>Party Mode</button>    
             </nav>
         )
     }
