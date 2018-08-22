@@ -30,8 +30,8 @@ import landsbergFun from './img/finalsindividuals1/landsbergFun.jpg'
 import landsbergSerious from './img/finalsindividuals1/landsbergSerious.jpg'
 import matthewsFun from './img/finalsindividuals1/matthewsFun.jpg'
 import matthewsSerious from './img/finalsindividuals1/matthewsSerious.jpg'
-import meekerFun from './img/finalsindividuals1/meekerFun.jpg'
-import meekerSerious from './img/finalsindividuals1/meekerSerious.jpg'
+import meakerFun from './img/finalsindividuals1/meakerFun.jpg'
+import meakerSerious from './img/finalsindividuals1/meakerSerious.jpg'
 import murphyFun from './img/finalsindividuals1/murphyFun.jpg'
 import murphySerious from './img/finalsindividuals1/murphySerious.jpg'
 import paulFun from './img/finalsindividuals1/paulFun.jpg'
@@ -75,7 +75,7 @@ class App extends Component {
       { id: 12, first_name: 'Matthew', last_name: 'Kelly', serious_photo: kellySerious, fun_photo: kellyFun, github: 'https://github.com/MatthewKelly12', linkedin: 'https://www.linkedin.com/in/matthew-kelly-22465915b/', email: 'mkonabike@gmail.com', personal_website: '', other_website: '', other_website_description: '', preferred_skill: 'JavaScript, Canvas, Animation', bio: 'I was born and raised in Nashville, TN and I enjoy math, music, gardening, mountain biking, and dogs.' },
       { id: 13, first_name: 'Hayley', last_name: 'Landsberg', serious_photo: landsbergSerious, fun_photo: landsbergFun, github: 'https://github.com/hayleylandsberg', linkedin: 'www.linkedin.com/in/hayleyvheath', email: 'hayleylandsberg@gmail.com', personal_website: 'www.hayleylandsberg.com', other_website: 'dribbble.com/hayleylandsberg', other_website_description: 'Dribbble', preferred_skill: 'Front End Development, React, Javascript, CSS', bio: "A risk management professional turned UX/UI Designer & Developer. I'm passionate about the user's experience and appreciate design thinking." },
       { id: 14, first_name: 'Riley', last_name: 'Mathews', serious_photo: matthewsSerious, fun_photo: matthewsFun, github: 'https://github.com/RileyMathews', linkedin: 'https://www.linkedin.com/in/riley-mathews-12a243b4/', email: 'riley@rileymathews.com', personal_website: 'rileymathews.com', other_website: '', other_website_description: '', preferred_skill: 'Javascript. Python/Django', bio: "I am a musician and producer turned software developer. I'm looking forward to what this new journey has in store." },
-      { id: 15, first_name: 'Erin', last_name: 'Meaker', serious_photo: meekerSerious, fun_photo: meekerFun, github: 'https://github.com/MrErin', linkedin: 'www.linkedin.com/in/erin-meaker', email: 'erinmeaker@gmail.com', personal_website: 'erinmeaker.com', other_website: '', other_website_description: '', preferred_skill: 'I love working through any problem that involves data analysis or complex logic. ', bio: 'Chaos tamer. Problem solver. Data spelunker. Insatiable learner. Optimizer. Innovator. Slayer of bugs.' },
+      { id: 15, first_name: 'Erin', last_name: 'Meaker', serious_photo: meakerSerious, fun_photo: meakerFun, github: 'https://github.com/MrErin', linkedin: 'www.linkedin.com/in/erin-meaker', email: 'erinmeaker@gmail.com', personal_website: 'erinmeaker.com', other_website: '', other_website_description: '', preferred_skill: 'I love working through any problem that involves data analysis or complex logic. ', bio: 'Chaos tamer. Problem solver. Data spelunker. Insatiable learner. Optimizer. Innovator. Slayer of bugs.' },
       { id: 16, first_name: 'Patrick', last_name: 'Murphy', serious_photo: murphySerious, fun_photo: murphyFun, github: 'https://github.com/pwmurphy89', linkedin: 'https://www.linkedin.com/in/patrick-murphy-12561166/', email: 'pwmurphy89@gmail.com', personal_website: 'www.pwmurphy.com', other_website: '', other_website_description: '', preferred_skill: 'JavaScript', bio: 'I have a lot of interests.' },
       { id: 17, first_name: 'David', last_name: 'Paul', serious_photo: paulSerious, fun_photo: paulFun, github: 'https://github.com/obscure-shadow', linkedin: 'https://www.linkedin.com/in/david-paul-93267079/', email: 'dfp333@gmail.com', personal_website: 'URL TK', other_website: '', other_website_description: '', preferred_skill: 'DevOps and Security', bio: 'I like things. Sometimes I also like stuff. Also, learn vim.' },
       { id: 18, first_name: 'Jonny', last_name: 'Riggs', serious_photo: riggsSerious, fun_photo: riggsFun, github: 'https://github.com/Jonny-Riggs', linkedin: 'www.linkedin.com/in/jonnyriggs615', email: 'jonny.riggs615@gmail.com', personal_website: 'URL TK', other_website: 'https://twitter.com/_jonny_riggs', other_website_description: 'Twitter', preferred_skill: 'Full Stack - Javascript/React and Python/Django', bio: 'Nashville native and musician with a serious passion for all things software development.' },
@@ -87,8 +87,9 @@ class App extends Component {
       { id: 24, first_name: 'Ronnie', last_name: 'Young', serious_photo: youngSerious, fun_photo: youngFun, github: 'https://github.com/Ryoung27', linkedin: 'https://www.linkedin.com/in/ronnie-young-bb59a2119/', email: 'RRYoung89@gmail.com', personal_website: 'https://ryoung27.github.io/', other_website: '', other_website_description: '', preferred_skill: 'I want to work with things that are technically challenging in the software field. I am an extrovert and enjoy the humanities.', bio: 'I arise in the morning torn between a desire to improve the world and a desire to enjoy the world. This makes it difficult to plan the day.' },
       { id: 25, first_name: 'Paul', last_name: 'Zimmerman-Clayton', serious_photo: pzcSerious, fun_photo: pzcFun, github: 'https://github.com/paulzimmclay', linkedin: 'https://www.linkedin.com/in//paulzc', email: 'paul.zimmerman.clayton@gmail.com', personal_website: 'URL TK', other_website: '', other_website_description: '', preferred_skill: 'Want to work with: JavaScript, React, Python, Django. Existing skills in: Operations, Implementation, Customer Support, Documentation', bio: "Ask questions, listen, and understand as completely as possible the problem to be solved - these are the most important things I've learned while working directly with customers and enabling my teammates. I'm excited to work with an experienced development team to learn how to define and solve a new set of challenges." }
     ],
-    searchTerms: '',
-    currentView: 'home'
+    searchTerms: "",
+    currentView: 'home',
+    searchResults: {}
   }
 
   showModal = (studentId) => {
@@ -112,12 +113,35 @@ class App extends Component {
   }
 
   searchingView = () => (<h1 style={{ marginTop: '125px' }}>Searching ... </h1>)
-
+  
+  // handleFieldChange = (evt) => {
+  //   console.log(evt.target.value)
+  //   const stateToChange = {}
+  //   stateToChange[evt.target.id] = evt.target.value
+  //   this.setState(stateToChange)
+  // }
   // Search handler -> passed to NavBar
   findStudent = function (terms) {
+    // when first typed in it goes to searching view
+    // if first name is equal to a student as well as last name
+    // return that student as an object and set view to that profle page
+    console.log(terms)
+    // const searchTerms = terms.charAt(0).toUpperCase()
     this.setState({
       searchTerms: terms,
+      currentView: 'searching'
     })
+    this.state.students.forEach(student => {
+      console.log(student)
+      // debugger
+      const fullName = student.first_name + ' ' + student.last_name
+      if (student.first_name.toLowerCase() === terms || student.last_name.toLowerCase() === terms || fullName.toLowerCase() === terms){
+        this.setState({
+          searchResults: student,
+          currentView: 'profile'
+        }) 
+      }
+    });
   }.bind(this)
 
   showView = function (e) {
@@ -142,7 +166,7 @@ class App extends Component {
   View = () => {
     switch (this.state.currentView) {
       case "profile":
-        return <StudentProfile />
+        return <StudentProfile student={this.state.searchResults} />
       case "searching":
         return <this.searchingView />
       case "home":
@@ -162,7 +186,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar viewHandler={this.showView} 
+        searchHandler={this.findStudent} 
+        fieldHandler={this.handleFieldChange}/>
         {this.View()}
       </div>
     )

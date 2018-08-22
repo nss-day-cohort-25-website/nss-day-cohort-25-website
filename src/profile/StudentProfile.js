@@ -19,7 +19,7 @@ class StudentProfile extends Component {
     render() {
         return (
             <React.Fragment>
-                <article class="Profile__student" id={this.props.student.id}>
+                <article class="Profile__student" id={`${this.props.student.id}__profile`}>
                     <section>
                         <h1>{this.props.student.first_name} {this.props.student.last_name}</h1>
                         <img src={this.props.student.serious_photo} alt={this.props.student.last_name} />
@@ -28,8 +28,8 @@ class StudentProfile extends Component {
                         <a href={this.props.student.linkedin}>linkedIn</a>
                     </section>
                     <section>
-                        <p>{this.student.bio}</p>
-                        <p>{this.student.preferred_skill}</p>
+                        <p>{this.props.student.bio}</p>
+                        <p>{this.props.student.preferred_skill}</p>
                     </section>
                     <section>
                         <h3>{this.props.student.email}</h3>
