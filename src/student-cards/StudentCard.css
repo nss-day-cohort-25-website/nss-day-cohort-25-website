@@ -1,3 +1,8 @@
+:root {
+    --name-color: red;
+}
+
+
 .container__student{
     display: flex;
     flex-flow: row wrap;
@@ -6,19 +11,22 @@
 }
 
 .card__student {
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
     margin: 1%;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 2px lightblue solid;
+    /* border-top: 5px lightblue solid; */
+    /* border-radius: 10px; */
+    transition: all .3s ease-in-out;
 }
 
 .student__img {
     height: 25%;
     width: 25%;
+    border-radius: 4px;
 }
 
 .student__links {
@@ -28,7 +36,12 @@
 }
 
 .student__info {
-    width: 35px;
+    width: 28px;
     height: auto;
     margin: 3px;
 }
+
+.card__student:hover {
+    transform: scale(1.6);
+    color: var(--name-color);
+};
