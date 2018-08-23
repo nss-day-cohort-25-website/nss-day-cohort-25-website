@@ -1,14 +1,18 @@
 .groupImage {
     width: 100vw;
+    position: absolute;
+    top: 0;
 }
 
 .lang__container{
+    margin-top: 95vh;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
     padding: 5% 13% 5% 13%;
-    margin: 6%;
     background: rgba(200,200,200, 0.8)
 }
 .lang__container img{
