@@ -9,7 +9,7 @@ class MainView extends Component {
     render() {
         return (
             <div>
-                <GroupTech />
+                <GroupTech partyOn={this.props.partyOn}/>
                 <StudentBlock
                     showModal={this.props.showModal}
                     students={this.props.students}

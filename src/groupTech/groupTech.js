@@ -97,7 +97,7 @@ export default class GroupTech extends Component {
         return (
             <section>
                 {/* this img will need to change based on party mode */}
-                <img className="groupImage" src={groupImage} alt='groupImage' title='placeholderImage'/>
+                <img className="groupImage" src={this.props.partyOn ? this.state.groupImage.fun : this.state.groupImage.serious } alt='groupImage' title='groupImage'/>
                     <div className="lang__container" id="skills">
                     {this.state.languages.map(lang => (
                         <img src={lang.src} key={this.uniqueKey++} alt={lang.alt} title={lang.title} />

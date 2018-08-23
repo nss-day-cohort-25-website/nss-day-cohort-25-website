@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from './nav/NavBar';
 import MainView from './mainView/Main'
-import StudentProfile from './profile/StudentProfile'
 
 // image import
 import agobertFun from './img/finalsindividuals1/agobertFun.jpg'
