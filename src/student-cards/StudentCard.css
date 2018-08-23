@@ -1,5 +1,7 @@
 :root {
-    --name-color: red;
+    --name-color: #343E3D;
+    --link-non-hover: gray;
+    --link-hover: #1CE8AB;
 }
 
 
@@ -12,15 +14,15 @@
 
 .card__student {
     width: 20%;
-    height: 20%;
+    height: 25%;
     margin: 1%;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
-    /* border-top: 5px lightblue solid; */
-    /* border-radius: 10px; */
-    transition: all .3s ease-in-out;
+    /* border: 2px black solid; */
+    /* border-radius: 25%; */
+    transition: all .5s ease-in-out;
 }
 
 .student__img {
@@ -28,20 +30,22 @@
     width: 25%;
     border-radius: 4px;
 }
+.student__img:hover {
+    /* transform: scale(2.2); */
+}
 
 .student__links {
-    width: 30px;
-    height: auto;
+    font-size: 20px;
     margin: 3px;
+    color: var(--link-non-hover);
+    transition: all .5 ease-in-out
+}
+.student__links:hover {
+    color: var(--link-hover);
+    transform: scale(2.2);
 }
 
-.student__info {
-    width: 28px;
-    height: auto;
-    margin: 3px;
-}
 
 .card__student:hover {
-    transform: scale(1.6);
-    color: var(--name-color);
+    background-color: var(--name-color);
 };
