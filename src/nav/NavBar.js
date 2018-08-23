@@ -12,7 +12,7 @@ export default class NavBar extends Component {
             <nav>
                 <img src={nss} alt="nssLogo"/> 
                 <h1> Cohort 25 </h1>
-                <button>Party Mode</button>    
+                <button onClick={this.props.partyToggle}>Party Mode</button>    
             </nav>
         )
     }

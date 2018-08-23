@@ -15,6 +15,7 @@ class MainView extends Component {
                     students={this.props.students}
                     hideModal={this.props.hideModal}
                     modalShown={this.props.modalShown}
+                    partyOn={this.props.partyOn}
                 />
                 {this.props.modalShown ?
                 <StudentModal

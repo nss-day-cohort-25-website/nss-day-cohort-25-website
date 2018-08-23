@@ -13,6 +13,7 @@ class StudentBlock extends Component {
                     <StudentCard key={student.id}
                         student={student}
                         showModal={this.props.showModal}
+                        partyOn={this.props.partyOn}
                     />
                 ))}
                 </div>
