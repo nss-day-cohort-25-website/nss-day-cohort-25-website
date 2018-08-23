@@ -7,13 +7,15 @@
 
 .container__student{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    /* flex-flow: row wrap; */
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card__student {
-    width: 20%;
+    width: 25%;
     height: 25%;
     margin: 1%;
     display: flex;
@@ -21,13 +23,13 @@
     justify-content: space-evenly;
     align-items: center;
     /* border: 2px black solid; */
-    /* border-radius: 25%; */
+    border-radius: 5px;
     transition: all .5s ease-in-out;
 }
 
 .student__img {
     height: 25%;
-    width: 25%;
+    width: 300px;
     border-radius: 4px;
 }
 .student__img:hover {
@@ -45,7 +47,6 @@
     transform: scale(2.2);
 }
 
-
-.card__student:hover {
-    background-color: var(--name-color);
-};
+.student__name {
+    font-size: 25px;
+}

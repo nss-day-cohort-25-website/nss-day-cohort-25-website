@@ -12,8 +12,8 @@ class StudentCard extends Component {
         return (
             <React.Fragment>
                     <div className="card__student">
-                        <p>{this.props.student.first_name} {this.props.student.last_name}</p>
-                        <img className="student__img" src={this.props.student.serious_photo} alt={this.props.student.last_name} />
+                        <img className="student__img" onClick={this.modalOn} src={this.props.student.serious_photo} alt={this.props.student.last_name} />
+                        <p className="student__name">{this.props.student.first_name} {this.props.student.last_name}</p>
                         <div>
                         <span><a target="blank" href={this.props.student.github}><i class="fab fa-github student__links"></i></a></span>
                         <span><a target="blank" href={this.props.student.linkedin}><i class="fab fa-linkedin student__links"></i></a></span>
