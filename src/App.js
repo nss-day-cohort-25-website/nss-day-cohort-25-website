@@ -141,10 +141,6 @@ class App extends Component {
 
   View = () => {
     switch (this.state.currentView) {
-      case "profile":
-        return <StudentProfile />
-      case "searching":
-        return <this.searchingView />
       case "home":
       default:
         return <MainView
