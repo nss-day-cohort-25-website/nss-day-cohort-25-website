@@ -37,8 +37,8 @@ class StudentModal extends Component {
                         <div>
                             <h1>{this.state.currentStudent.first_name} {this.state.currentStudent.last_name}</h1>
                             <img src={this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} widht={200} />
-                            <a href={this.state.currentStudent.github}>github</a>
-                            <a href={this.state.currentStudent.linkedin}>linkedIn</a>
+                            <a href={this.state.currentStudent.github}><i className="fab fa-github student__links"></i></a>
+                            <a href={this.state.currentStudent.linkedin}><i class="fab fa-linkedin student__links"></i></a>
                         </div>
                         <div>
                             <p>bio: {this.state.currentStudent.bio}</p>
@@ -46,7 +46,7 @@ class StudentModal extends Component {
                         </div>
                         <div>
                             <h3>{this.state.currentStudent.email}</h3>
-                            <a href={this.state.currentStudent.personal_website}>{this.state.currentStudent.personal_website}</a>
+                            <a href={this.state.currentStudent.personal_website}><i class="fas fa-user-circle"></i></a>
                             <a href={this.state.currentStudent.other_website}>{this.state.currentStudent.other_website_description}</a>
                         </div>
                         <button onClick={this.closeModal} className="close">close</button>
