@@ -12,6 +12,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card__student {
@@ -28,12 +29,9 @@
 }
 
 .student__img {
-    height: 25%;
-    width: 300px;
+    height: 20%;
+    width: 20px;
     border-radius: 4px;
-}
-.student__img:hover {
-    /* transform: scale(2.2); */
 }
 
 .student__links {
@@ -49,4 +47,9 @@
 
 .student__name {
     font-size: 25px;
+}
+
+.card__student img {
+    height: 65%;
+    width: 65%;
 }

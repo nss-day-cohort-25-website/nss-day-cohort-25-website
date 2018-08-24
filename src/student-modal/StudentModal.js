@@ -34,22 +34,27 @@ class StudentModal extends Component {
             <React.Fragment>
                 <div className="student__modal close" onClick={this.props.hideModal}>
                     <div className="student__modal__content">
-                        <div>
+                        <div className="student__close" onClick={this.closeModal}>
+                            <button  className="close"><i class="far fa-times-circle"></i></button>
+                        </div>
                             <h1>{this.state.currentStudent.first_name} {this.state.currentStudent.last_name}</h1>
-                            <img src={this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} widht={200} />
-                            <a href={this.state.currentStudent.github}><i className="fab fa-github student__links"></i></a>
-                            <a href={this.state.currentStudent.linkedin}><i class="fab fa-linkedin student__links"></i></a>
+                        <div className="student__container">
+                            <div className="student__left">
+                                <img src={this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} width={200} />
+                            </div>
+                            <div className="student__right">
+                                <p>{this.state.currentStudent.bio}</p>
+                                <p>Preferred Skills: {this.state.currentStudent.preferred_skill}</p>
+
+                            </div>
+                            <div className="student__middle">
+                                <a target='_blank' href={this.state.currentStudent.github}><i class="fab fa-github student__links"></i></a>
+                                <a target='_blank' href={this.state.currentStudent.linkedin}><i class="fab fa-linkedin student__links"></i></a>
+                                <a  href={this.state.currentStudent.email}><i class="far fa-envelope student__links"></i></a>
+                                <a target='_blank' href={this.state.currentStudent.personal_website}><i class="fas fa-user-circle student__links"></i></a>
+                                <a target='_blank' href={this.state.currentStudent.other_website}><i class="fas fa-globe-americas student__links"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <p>bio: {this.state.currentStudent.bio}</p>
-                            <p>preferred skills: {this.state.currentStudent.preferred_skill}</p>
-                        </div>
-                        <div>
-                            <h3>{this.state.currentStudent.email}</h3>
-                            <a href={this.state.currentStudent.personal_website}><i class="fas fa-user-circle"></i></a>
-                            <a href={this.state.currentStudent.other_website}>{this.state.currentStudent.other_website_description}</a>
-                        </div>
-                        <button onClick={this.closeModal} className="close">close</button>
                     </div>
                 </div>
             </React.Fragment>
