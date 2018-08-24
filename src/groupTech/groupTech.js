@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import "./groupTech.css"
 // this is not the correct logo from mandy
 import groupImage from '../img/classPhoto.jpg'
+import groupFunny from '../img/finalgroup/groupFunny.jpg'
+import groupSerious from '../img/finalgroup/groupSerious.jpg'
 
 // tech images
 // images 
@@ -85,7 +87,10 @@ export default class GroupTech extends Component {
               alt: "SQLite",
               src: sqlite
             }
-          ]
+          ],
+      groupImage :
+          {serious: groupSerious,
+           fun: groupFunny } 
     }
     uniqueKey = 1
 
@@ -95,7 +100,7 @@ export default class GroupTech extends Component {
               <h1>Welcome to Our Class Site</h1>
               <p>Lorem ipsum dolor amet ethical schlitz umami 90's man braid vinyl yr mlkshk seitan normcore. Tbh unicorn 3 wolf moon prism glossier pork belly tacos locavore chicharrones vinyl chartreuse franzen cray. Coloring book distillery heirloom vegan williamsburg. Mixtape lyft next level 8-bit kickstarter, VHS synth tattooed brunch 90's.</p>
                 {/* this img will need to change based on party mode */}
-                <img className="groupImage" src={groupImage} alt='groupImage' title='placeholderImage'/>
+                <img className="groupImage" src={this.props.partyOn ? this.state.groupImage.fun : this.state.groupImage.serious } alt='groupImage' title='groupImage'/>
                     <div className="lang__container" id="skills">
                     {this.state.languages.map(lang => (
                         <img src={lang.src} key={this.uniqueKey++} alt={lang.alt} title={lang.title} />

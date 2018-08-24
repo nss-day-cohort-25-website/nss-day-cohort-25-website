@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from './nav/NavBar';
 import MainView from './mainView/Main'
-import StudentProfile from './profile/StudentProfile'
 
 // image import
 import agobertFun from './img/finalsindividuals1/agobertFun.jpg'
@@ -88,7 +87,6 @@ class App extends Component {
       { id: 24, first_name: 'Ronnie', last_name: 'Young', serious_photo: youngSerious, fun_photo: youngFun, github: 'https://github.com/Ryoung27', linkedin: 'https://www.linkedin.com/in/ronnie-young-bb59a2119/', email: 'RRYoung89@gmail.com', personal_website: 'https://ryoung27.github.io/', other_website: '', other_website_description: '', preferred_skill: 'I want to work with things that are technically challenging in the software field. I am an extrovert and enjoy the humanities.', bio: 'I arise in the morning torn between a desire to improve the world and a desire to enjoy the world. This makes it difficult to plan the day.' },
       { id: 25, first_name: 'Paul', last_name: 'Zimmerman-Clayton', serious_photo: pzcSerious, fun_photo: pzcFun, github: 'https://github.com/paulzimmclay', linkedin: 'https://www.linkedin.com/in//paulzc', email: 'paul.zimmerman.clayton@gmail.com', personal_website: 'URL TK', other_website: '', other_website_description: '', preferred_skill: 'Want to work with: JavaScript, React, Python, Django. Existing skills in: Operations, Implementation, Customer Support, Documentation', bio: "Ask questions, listen, and understand as completely as possible the problem to be solved - these are the most important things I've learned while working directly with customers and enabling my teammates. I'm excited to work with an experienced development team to learn how to define and solve a new set of challenges." }
     ],
-    searchTerms: '',
     currentView: 'home'
   }
 
@@ -117,15 +115,6 @@ class App extends Component {
     this.setState({ partyOn: !this.state.partyOn })
   }
 
-  searchingView = () => (<h1 style={{ marginTop: '125px' }}>Searching ... </h1>)
-
-  // Search handler -> passed to NavBar
-  findStudent = function (terms) {
-    this.setState({
-      searchTerms: terms,
-    })
-  }.bind(this)
-
   showView = function (e) {
     let view = null
 
@@ -147,10 +136,6 @@ class App extends Component {
 
   View = () => {
     switch (this.state.currentView) {
-      case "profile":
-        return <StudentProfile />
-      case "searching":
-        return <this.searchingView />
       case "home":
       default:
         return <MainView

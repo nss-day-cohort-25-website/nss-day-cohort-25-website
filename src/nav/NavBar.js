@@ -6,27 +6,6 @@ import nss from '../img/NSS-logo.png'
 
 export default class NavBar extends Component {
 
-    // Set initial state
-    state = {
-        searchTerms: ''
-    }
-
-    /**
-     * Local search handler, which invokes the searchHandler reference
-     * passed from App
-     */
-    search = (e) => {
-        if (e.charCode === 13) {
-            this.props.searchHandler(this.state.searchTerms)
-            this.setState({ searchTerms: "" })
-        }
-    }
-
-    handleFieldChange = (evt) => {
-        const stateToChange = {}
-        stateToChange[evt.target.id] = evt.target.value
-        this.setState(stateToChange)
-    }
 
     render() {
         return (
