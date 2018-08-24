@@ -1,9 +1,8 @@
 import React, { Component } from "react"
 import "./groupTech.css"
 // this is not the correct logo from mandy
-import groupImage from '../img/classPhoto.jpg'
-import groupFunny from '../img/finalgroup/groupFunny.jpg'
-import groupSerious from '../img/finalgroup/groupSerious.jpg'
+import groupFunny from '../img/classPhotoFun.jpg'
+import groupSerious from '../img/classPhoto.jpg'
 
 // tech images
 // images 
