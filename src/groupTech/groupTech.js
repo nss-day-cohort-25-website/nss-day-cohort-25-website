@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import "./groupTech.css"
 // this is not the correct logo from mandy
-import groupImage from '../img/groupPlaceHolder.png'
+import groupFunny from '../img/finalgroup/groupFunny.jpg'
+import groupSerious from '../img/finalgroup/groupSerious.jpg'
 
 // tech images
 // images 
@@ -85,7 +86,10 @@ export default class GroupTech extends Component {
               alt: "SQLite",
               src: sqlite
             }
-          ]
+          ],
+      groupImage :
+          {serious: groupSerious,
+           fun: groupFunny } 
     }
     uniqueKey = 1
 
@@ -93,7 +97,7 @@ export default class GroupTech extends Component {
         return (
             <section>
                 {/* this img will need to change based on party mode */}
-                <img className="groupImage" src={groupImage} alt='groupImage' title='placeholderImage'/>
+                <img className="groupImage" src={this.props.partyOn ? this.state.groupImage.fun : this.state.groupImage.serious } alt='groupImage' title='groupImage'/>
                     <div className="lang__container" id="skills">
                     {this.state.languages.map(lang => (
                         <img src={lang.src} key={this.uniqueKey++} alt={lang.alt} title={lang.title} />
