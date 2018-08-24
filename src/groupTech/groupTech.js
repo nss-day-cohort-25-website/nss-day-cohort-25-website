@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./groupTech.css"
 // this is not the correct logo from mandy
+import groupImage from '../img/classPhoto.jpg'
 import groupFunny from '../img/finalgroup/groupFunny.jpg'
 import groupSerious from '../img/finalgroup/groupSerious.jpg'
 
@@ -96,6 +97,8 @@ export default class GroupTech extends Component {
     render() {
         return (
             <section>
+              <h1>Welcome to Our Class Site</h1>
+              <p>Lorem ipsum dolor amet ethical schlitz umami 90's man braid vinyl yr mlkshk seitan normcore. Tbh unicorn 3 wolf moon prism glossier pork belly tacos locavore chicharrones vinyl chartreuse franzen cray. Coloring book distillery heirloom vegan williamsburg. Mixtape lyft next level 8-bit kickstarter, VHS synth tattooed brunch 90's.</p>
                 {/* this img will need to change based on party mode */}
                 <img className="groupImage" src={this.props.partyOn ? this.state.groupImage.fun : this.state.groupImage.serious } alt='groupImage' title='groupImage'/>
                     <div className="lang__container" id="skills">

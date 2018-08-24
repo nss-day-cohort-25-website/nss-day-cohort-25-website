@@ -3,6 +3,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card__student {
@@ -13,10 +14,9 @@
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px lightblue solid;
 }
 
 .card__student img {
-    height: 25%;
-    width: 25%;
+    height: 80%;
+    width: 80%;
 }

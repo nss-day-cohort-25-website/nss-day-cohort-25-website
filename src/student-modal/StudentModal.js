@@ -36,9 +36,9 @@ class StudentModal extends Component {
                     <div className="student__modal__content">
                         <div>
                             <h1>{this.state.currentStudent.first_name} {this.state.currentStudent.last_name}</h1>
-                            <img src={this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} widht={200} />
-                            <a href={this.state.currentStudent.github}>github</a>
-                            <a href={this.state.currentStudent.linkedin}>linkedIn</a>
+                            <img src={this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} width={200} />
+                            <a target='_blank' href={this.state.currentStudent.github}>github</a>
+                            <a target='_blank' href={this.state.currentStudent.linkedin}>linkedIn</a>
                         </div>
                         <div>
                             <p>bio: {this.state.currentStudent.bio}</p>
@@ -46,8 +46,8 @@ class StudentModal extends Component {
                         </div>
                         <div>
                             <h3>{this.state.currentStudent.email}</h3>
-                            <a href={this.state.currentStudent.personal_website}>{this.state.currentStudent.personal_website}</a>
-                            <a href={this.state.currentStudent.other_website}>{this.state.currentStudent.other_website_description}</a>
+                            <a target='_blank' href={this.state.currentStudent.personal_website}>{this.state.currentStudent.personal_website}</a>
+                            <a target='_blank' href={this.state.currentStudent.other_website}>{this.state.currentStudent.other_website_description}</a>
                         </div>
                         <button onClick={this.closeModal} className="close">close</button>
                     </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import "./NavBar.css"
 // this is not the correct logo from mandy
-import nss from '../img/Nss.png'
+import nss from '../img/NSS-logo.png'
 
 
 export default class NavBar extends Component {
@@ -10,9 +10,17 @@ export default class NavBar extends Component {
     render() {
         return (
             <nav>
-                <img src={nss} alt="nssLogo"/> 
-                <h1> Cohort 25 </h1>
-                <button onClick={this.props.partyToggle}>Party Mode</button>    
+                <div id="nav-logo" className="nav-div">
+                    <img src={nss} alt="nssLogo"/> 
+                </div>
+                <div className="nav-div">
+                    <a id="nav-links" href="#">About</a>
+                    <a id="nav-links" href="#">Technology</a>
+                    <a id="nav-links" href="#">Students</a>
+                </div>
+                <div id="nav-btn" className="nav-div">
+                    <button id="party-btn" onClick={this.props.partyToggle}>🎉</button>
+                </div>    
             </nav>
         )
     }
