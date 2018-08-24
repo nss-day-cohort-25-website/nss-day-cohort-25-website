@@ -11,6 +11,7 @@ class StudentCard extends Component {
     render() {
         return (
             <React.Fragment>
+<<<<<<< HEAD
                     <div className="card__student">
                         <img className="student__img" onClick={this.modalOn} src={this.props.student.serious_photo} alt={this.props.student.last_name} />
                         <p className="student__name">{this.props.student.first_name} {this.props.student.last_name}</p>
@@ -20,6 +21,15 @@ class StudentCard extends Component {
                         <span onClick={this.modalOn}><i class="fas fa-info-circle student__links"></i></span>
                         </div>
                     </div>
+=======
+                <div className="card__student">
+                    <p>{this.props.student.first_name} {this.props.student.last_name}</p>
+                    <img src={this.props.partyOn ? this.props.student.fun_photo : this.props.student.serious_photo} alt={this.props.student.last_name} />
+                    <a target="blank" href={this.props.student.github}>github</a>
+                    <a target="blank" href={this.props.student.linkedin}>linkedIn</a>
+                    <button onClick={this.modalOn}>info</button>
+                </div>
+>>>>>>> master
             </React.Fragment>
         )
     }
