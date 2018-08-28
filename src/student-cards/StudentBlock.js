@@ -8,7 +8,7 @@ class StudentBlock extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container__student">
+                <div className="container__student" id="students">
                 {this.props.students.map(student => (
                     <StudentCard key={student.id}
                         student={student}

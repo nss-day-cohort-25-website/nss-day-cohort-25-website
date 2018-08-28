@@ -34,8 +34,8 @@ class StudentModal extends Component {
             <React.Fragment>
                 <div className="student__modal close" onClick={this.props.hideModal}>
                     <div className="student__modal__content">
-                        <div className="student__close" onClick={this.closeModal}>
-                            <button  className="close"><i class="far fa-times-circle"></i></button>
+                        <div className="student__close" >
+                            <i onClick={this.props.hideModal} class="far fa-times-circle"></i>
                         </div>
                             <h1>{this.state.currentStudent.first_name} {this.state.currentStudent.last_name}</h1>
                         <div className="student__container">
