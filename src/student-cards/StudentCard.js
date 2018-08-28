@@ -12,11 +12,13 @@ class StudentCard extends Component {
         return (
             <React.Fragment>
                 <div className="card__student">
-                    <img src={this.props.partyOn ? this.props.student.fun_photo : this.props.student.serious_photo} alt={this.props.student.last_name} />
-                    <p>{this.props.student.first_name} {this.props.student.last_name}</p>
-                    <a target="blank" href={this.props.student.github}>github</a>
-                    <a target="blank" href={this.props.student.linkedin}>linkedIn</a>
-                    <button onClick={this.modalOn}>info</button>
+                    <img className="student__img" onClick={this.modalOn} src={this.props.partyOn ? this.props.student.fun_photo : this.props.student.serious_photo} alt={this.props.student.last_name} />
+                    <span className="student__name">{this.props.student.first_name} {this.props.student.last_name}</span>
+                    <div>
+                        <span><a target="blank" href={this.props.student.github}><i className="fab fa-github student__links"></i></a></span>
+                        <span><a target="blank" href={this.props.student.linkedin}><i className="fab fa-linkedin student__links"></i></a></span>
+                        <span onClick={this.modalOn}><i className="fas fa-info-circle student__links"></i></span>
+                    </div>
                 </div>
             </React.Fragment>
         )

@@ -3,7 +3,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     width: 100vw;
     background: white;
     border-bottom: 1px solid #707070;
