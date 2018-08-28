@@ -6,9 +6,7 @@
 }
 
 .lang__container{
-    margin-top: 95vh;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 10% 5% 5% 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
