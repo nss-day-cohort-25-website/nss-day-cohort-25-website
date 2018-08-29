@@ -24,88 +24,91 @@ import sqlite from '../img/languages/Sqlite-square-icon.png'
 
 export default class GroupTech extends Component {
 
-    state = {
-        languages: [
-            {
-              title: "Vanilla Javascript",
-              alt: "Vanilla Javascript",
-              src: js
-            },
-            {
-              title: "CSS",
-              alt: "CSS",
-              src: css3
-            },
-            {
-              title: "git & Version Control",
-              alt: "git & Version Control",
-              src: git
-            },
-            {
-              title: "gitHub Cloud Version Control",
-              alt: "gitHub Cloud Version Control",
-              src: gitHub
-            },
-            {
-              title: "Grunt.js Tool",
-              alt: "Grunt.js Tool",
-              src: grunt
-            },
-            {
-              title: "html5 web",
-              alt: "html5 web",
-              src: html5
-            },
-            {
-              title: "jquery tool",
-              alt: "jquery tool",
-              src: jquery
-            },
-            {
-              title: "React.js Framework",
-              alt: "React.js Framework",
-              src: react
-            },
-            {
-              title: "Amazon Web Services",
-              alt: "Amazon Web Services",
-              src: aws
-            },
-            {
-              title: "Python",
-              alt: "Python",
-              src: python
-            },
-            {
-              title: "Django Framework",
-              alt: "Django",
-              src: django
-            },
-            {
-              title: "SQLite",
-              alt: "SQLite",
-              src: sqlite
-            }
-          ],
-      groupImage :
-          {serious: groupSerious,
-           fun: groupFunny } 
+  state = {
+    languages: [
+      {
+        title: "Vanilla Javascript",
+        alt: "Vanilla Javascript",
+        src: js
+      },
+      {
+        title: "CSS",
+        alt: "CSS",
+        src: css3
+      },
+      {
+        title: "git & Version Control",
+        alt: "git & Version Control",
+        src: git
+      },
+      {
+        title: "gitHub Cloud Version Control",
+        alt: "gitHub Cloud Version Control",
+        src: gitHub
+      },
+      {
+        title: "Grunt.js Tool",
+        alt: "Grunt.js Tool",
+        src: grunt
+      },
+      {
+        title: "html5 web",
+        alt: "html5 web",
+        src: html5
+      },
+      {
+        title: "jquery tool",
+        alt: "jquery tool",
+        src: jquery
+      },
+      {
+        title: "React.js Framework",
+        alt: "React.js Framework",
+        src: react
+      },
+      {
+        title: "Amazon Web Services",
+        alt: "Amazon Web Services",
+        src: aws
+      },
+      {
+        title: "Python",
+        alt: "Python",
+        src: python
+      },
+      {
+        title: "Django Framework",
+        alt: "Django",
+        src: django
+      },
+      {
+        title: "SQLite",
+        alt: "SQLite",
+        src: sqlite
+      }
+    ],
+    groupImage:
+    {
+      serious: groupSerious,
+      fun: groupFunny
     }
-    uniqueKey = 1
+  }
+  uniqueKey = 1
 
-    render() {
-        return (
-            <section>
-              <h1>Welcome to Our Class Site</h1>
-              <p>Lorem ipsum dolor amet ethical schlitz umami 90's man braid vinyl yr mlkshk seitan normcore. Tbh unicorn 3 wolf moon prism glossier pork belly tacos locavore chicharrones vinyl chartreuse franzen cray. Coloring book distillery heirloom vegan williamsburg. Mixtape lyft next level 8-bit kickstarter, VHS synth tattooed brunch 90's.</p>
-                {/* this img will need to change based on party mode */}
-                <img className="groupImage" src={this.props.partyOn ? this.state.groupImage.fun : this.state.groupImage.serious } alt='groupImage' title='groupImage'/>
-                    <div className="lang__container" id="skills">
-                    {this.state.languages.map(lang => (
-                        <img src={lang.src} key={this.uniqueKey++} alt={lang.alt} title={lang.title} />
-                    ))}
-                    </div>
-            </section>
-        )
-    }
+  render() {
+    return (
+      <section >
+        <h1>Welcome to Our Class Site</h1>
+        <p>Front-end development using HTML/CSS, JavaScript, jQuery, React, and lots of other tools, APIs, libraries and frameworks</p>
+        <p>Server-side development with Python/Django, including test-driven development, SQL in a full agile, mock-company environment</p>
+        {/* this img will need to change based on party mode */}
+        <img className="groupImage" src={this.props.partyOn ? this.state.groupImage.fun : this.state.groupImage.serious} alt='groupImage' title='groupImage' />
+        <div className="lang__container" id="skills">
+          {this.state.languages.map(lang => (
+            <img src={lang.src} key={this.uniqueKey++} alt={lang.alt} title={lang.title} />
+          ))}
+        </div>
+      </section>
+    )
+  }
 }

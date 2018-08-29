@@ -15,8 +15,8 @@ export default class NavBar extends Component {
                 </div>
                 <div className="nav-div">
                     <a id="nav-links" href="#">About</a>
-                    <a id="nav-links" href="#">Technology</a>
-                    <a id="nav-links" href="#">Students</a>
+                    <a id="nav-links" href="#skills">Technology</a>
+                    <a id="nav-links" href="#students">Students</a>
                 </div>
                 <div id="nav-btn" className="nav-div">
                     <button id="party-btn" onClick={this.props.partyToggle}>🎉</button>
