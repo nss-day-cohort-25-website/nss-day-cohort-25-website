@@ -98,16 +98,14 @@ class App extends Component {
     })
   }
 
-  hideModal = (evt) => {
+  hideModal = () => {
     // method to close modal
     // only runs set state if the target
     // of the event has the class 'close'
-    if (evt.target.classList.contains("close")) {
-      this.setState({
-        modalShown: false,
-        modalStudent: null,
-      })
-    }
+    this.setState({
+      modalShown: false,
+      modalStudent: null,
+    })
   }
 
   partyToggle = () => {
