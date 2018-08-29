@@ -34,8 +34,8 @@ class StudentModal extends Component {
             <React.Fragment>
                 <div className="student__modal close" onClick={this.props.hideModal}>
                     <div className="student__modal__content">
-                        <div className="student__close" onClick={this.props.hideModal}>
-                            <button  className="close"><i class="far fa-times-circle"></i></button>
+                        <div className="student__close" >
+                            <i onClick={this.props.hideModal} class="far fa-times-circle"></i>
                         </div>
                             <h1>{this.state.currentStudent.first_name} {this.state.currentStudent.last_name}</h1>
                         <div className="student__container">
@@ -52,7 +52,12 @@ class StudentModal extends Component {
                                 <a target='_blank' href={this.state.currentStudent.linkedin}><i class="fab fa-linkedin student__links"></i></a>
                                 <a  href={this.state.currentStudent.email}><i class="far fa-envelope student__links"></i></a>
                                 <a target='_blank' href={this.state.currentStudent.personal_website}><i class="fas fa-user-circle student__links"></i></a>
-                                <a target='_blank' href={this.state.currentStudent.other_website}><i class="fas fa-globe-americas student__links"></i></a>
+                                {
+                                    this.state.currentStudent.other_website === '' ?
+                                    null
+                                    :
+                                    <a target='_blank' href={this.state.currentStudent.other_website}><i class="fas fa-globe-americas student__links"></i></a>
+                                }
                             </div>
                         </div>
                     </div>

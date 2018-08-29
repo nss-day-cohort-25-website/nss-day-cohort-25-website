@@ -8,16 +8,13 @@ nav {
     background: white;
     border-bottom: 1px solid #707070;
     font-family: 'Roboto Condensed', sans-serif;
+    /* position: sticky;
+    top: 0; */
 }
 
 nav img {
     width: 50px;
     margin: 10px 0 5px 0;
-}
-
-nav input{
-    width: 50%;
-    height: 50%;
 }
 
 #nav-links {
@@ -39,4 +36,14 @@ nav input{
 
 #nav-btn {
     margin-right: 40px;
+}
+
+@media only screen and (max-width: 375px) {
+    #nav-links {
+        display: block;
+        padding: 2%;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #080808;
+    }
 }
