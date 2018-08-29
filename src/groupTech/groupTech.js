@@ -99,6 +99,7 @@ export default class GroupTech extends Component {
     return (
       <section >
         <h1>Welcome to Our Class Site</h1>
+        <p>Nashville Software School</p>
         <p>Front-end development using HTML/CSS, JavaScript, jQuery, React, and lots of other tools, APIs, libraries and frameworks</p>
         <p>Server-side development with Python/Django, including test-driven development, SQL in a full agile, mock-company environment</p>
         {/* this img will need to change based on party mode */}

@@ -4,3 +4,30 @@ body {
   font-family: sans-serif;
   background-color: #F5F6F9;
 }
+
+#party{
+  background-color: #7AFAFF;
+  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #7AFAFF;}
+      25%  {background: #A2B2B2;}
+      50%  {background: #FFAE7A;}
+      75%  {background: #FFBD93;}
+      100% {background: #B26F43;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #7AFAFF;}
+      25%  {background: #A2B2B2;}
+      50%  {background: #FFAE7A;}
+      75%  {background: #FFBD93;}
+      100% {background: #B26F43;}
+    }
+    
+    
