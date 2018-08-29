@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import "./NavBar.css"
 // this is not the correct logo from mandy
-import nss from '../img/NSS-logo.png'
+import nss from '../img/NSS/logo.png'
 
 
 export default class NavBar extends Component {
