@@ -100,7 +100,7 @@ export default class GroupTech extends Component {
       <section >
         <h1>Welcome to Our Class Site</h1>
         <p>Front-end development using HTML/CSS, JavaScript, jQuery, React, and lots of other tools, APIs, libraries and frameworks</p>
-        <p>Server-side development with Python/Django, including test-driven development, SQL in a full agile, mock-company environment</p>
+        <p>Server-side development with Python/Django, including test-driven development and SQL in a full agile, simulated company environment</p>
         {/* this img will need to change based on party mode */}
         <img className="groupImage" src={this.props.partyOn ? this.state.groupImage.fun : this.state.groupImage.serious} alt='groupImage' title='groupImage' />
         <div className="lang__container" id="skills">
