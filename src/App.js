@@ -152,7 +152,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div id={this.state.partyOn ? "party": null} >
         <NavBar
           partyToggle={this.partyToggle}
         />

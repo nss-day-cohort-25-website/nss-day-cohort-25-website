@@ -8,6 +8,7 @@ nav {
     background: white;
     border-bottom: 1px solid #707070;
     font-family: 'Roboto Condensed', sans-serif;
+    /* padding: 10px; */
     /* position: sticky;
     top: 0; */
 }
@@ -17,8 +18,9 @@ nav img {
     margin: 10px 0 5px 0;
 }
 
+
 #nav-links {
-    margin-left: 50px;
+    margin-left: 64px;
     text-decoration: none;
     color: #080808;
 }
@@ -38,7 +40,7 @@ nav img {
     margin-right: 40px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 415px) {
     #nav-links {
         display: block;
         padding: 2%;

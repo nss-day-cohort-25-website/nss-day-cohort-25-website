@@ -24,6 +24,7 @@ class MainView extends Component {
                     hideModal={this.props.hideModal}
                     modalShown={this.props.modalShown}
                     modalStudent={this.props.modalStudent}
+                    partyOn={this.props.partyOn}
                 />
                 :
                 <React.Fragment>
