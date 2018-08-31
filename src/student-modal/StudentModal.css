@@ -34,8 +34,8 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-
 }
 .student__middle {
     display: flex;
@@ -70,4 +70,41 @@
     color: gray;
     float:right;
     margin: 3px 5px 0 0;
+}
+
+@media only screen and (max-width: 415px) {
+    .student__modal__content {
+        border-radius: 4px;
+        width: 75%;
+        max-width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 2%;
+    }
+    .student__modal__content img {
+        width: 100px;
+        height: auto;
+        border-radius: 4px;
+    }
+    .student__middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    .student__right {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    
+    .student__right > p {
+        width: 75%;
+    }
+    
 }

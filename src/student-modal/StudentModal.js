@@ -42,15 +42,16 @@ class StudentModal extends Component {
                             <div className="student__left">
                                 <img src={this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} width={200} />
                             </div>
+        
                             <div className="student__right">
                                 <p>{this.state.currentStudent.bio}</p>
                                 <p>Preferred Skills: {this.state.currentStudent.preferred_skill}</p>
 
                             </div>
                             <div className="student__middle">
-                                <a target='_blank' href={this.state.currentStudent.github}><i class="fab fa-github student__links"></i></a>
-                                <a target='_blank' href={this.state.currentStudent.linkedin}><i class="fab fa-linkedin student__links"></i></a>
-                                <a  href={this.state.currentStudent.email}><i class="far fa-envelope student__links"></i></a>
+                                <a target='_blank' href={this.state.currentStudent.github}><i className="fab fa-github student__links"></i></a>
+                                <a target='_blank' href={this.state.currentStudent.linkedin}><i className="fab fa-linkedin student__links"></i></a>
+                                <a  href={this.state.currentStudent.email}><i className="far fa-envelope student__links"></i></a>
 
                                 {
                                     this.state.currentStudent.personal_website === '' ? null :
