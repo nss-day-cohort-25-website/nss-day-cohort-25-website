@@ -51,7 +51,11 @@ class StudentModal extends Component {
                                 <a target='_blank' href={this.state.currentStudent.github}><i class="fab fa-github student__links"></i></a>
                                 <a target='_blank' href={this.state.currentStudent.linkedin}><i class="fab fa-linkedin student__links"></i></a>
                                 <a  href={this.state.currentStudent.email}><i class="far fa-envelope student__links"></i></a>
+
+                                {
+                                    this.state.currentStudent.personal_website === '' ? null :
                                 <a target='_blank' href={this.state.currentStudent.personal_website}><i class="fas fa-user-circle student__links"></i></a>
+                                }
                                 {
                                     this.state.currentStudent.other_website === '' ?
                                     null
