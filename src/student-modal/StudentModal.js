@@ -40,7 +40,7 @@ class StudentModal extends Component {
                             <h1>{this.state.currentStudent.first_name} {this.state.currentStudent.last_name}</h1>
                         <div className="student__container">
                             <div className="student__left">
-                                <img src={this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} width={200} />
+                                <img src={this.props.partyOn ? this.state.currentStudent.fun_photo : this.state.currentStudent.serious_photo} alt={this.state.currentStudent.last_name} height={200} width={200} />
                             </div>
         
                             <div className="student__right">
